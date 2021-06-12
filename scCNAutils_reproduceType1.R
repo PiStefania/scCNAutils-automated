@@ -2,6 +2,7 @@
 library(fs)
 library(scCNAutils)
 
+pathProjectCommonFiles = path_home("scCNAutils-project/common")
 pathProjectReproduce = path_home("scCNAutils-project/reproduce")
 prefixType1 = "reproduce-type1"
 pathProjectReproduceType1 = path(pathProjectReproduce, prefixType1)
