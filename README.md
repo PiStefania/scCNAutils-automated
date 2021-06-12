@@ -2,7 +2,7 @@
 Machine Learning and Computational Biology Project
 
 # Purpose
-This github repository was created to ammend the process of executing the [jmonlong/scCNAutils repository](https://github.com/jmonlong/scCNAutils).
+This github repository was created to amend the process of executing the [jmonlong/scCNAutils repository](https://github.com/jmonlong/scCNAutils).
 In addition, we have forked his repository and made some changes, fixing some bugs regarding the dplyr package.
 
 # Execution
