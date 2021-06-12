@@ -1,4 +1,6 @@
 # Clone our version of the git repository
+library(fs)
+
 pathProject = path_home("scCNAutils-project")
 setwd(pathProject)
 download.file(url = "https://github.com/PiStefania/scCNAutils/archive/refs/heads/master.zip",
