@@ -2,6 +2,7 @@
 library(fs)
 library(scCNAutils)
 
+pathProjectCommonFiles = path_home("scCNAutils-project/common")
 pathProjectExample = path_home("scCNAutils-project/example")
 prefix = "example"
 setwd(pathProjectExample)
