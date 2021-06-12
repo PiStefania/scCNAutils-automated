@@ -44,7 +44,7 @@ sample3.data.df = read.table(
 names(sample3.data.df)[1] <- "symbol"
 
 cells.df = auto_cna_signal(
-  c(pathProjectReproduceSample1, pathProjectReproduceSample2, sample3.data.df),
+  c(pathProjectReproduceSample1, pathProjectReproduceSample2), # sample3.data.df),
   pathProjectCommonFileGenes,
   prefix = prefixType1,
   cell_cycle = pathProjectCommonFileCCGenes,
