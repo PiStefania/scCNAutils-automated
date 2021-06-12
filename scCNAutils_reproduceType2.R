@@ -31,10 +31,10 @@ names(sample2.data.df)[1] <- "symbol"
 cells.df = auto_cna_signal(
   c(sample1.data.df, sample2.data.df),
   pathProjectCommonFileGenes,
-  prefix = prefix,
+  prefix = prefixType2,
   cell_cycle = pathProjectFileCCGenes,
   use_cache = FALSE
 )
 loadPathFile = paste(prefixType2, '-ge-coord-norm.RData', sep = "")
 load(loadPathFile)
-cna.df = auto_cna_call(data, cells.df, prefix = prefix)
+cna.df = auto_cna_call(data, cells.df, prefix = prefixType2)
