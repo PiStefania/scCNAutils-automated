@@ -8,11 +8,23 @@ download.file(
   'ftp://ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz',
   'Homo_sapiens.GRCh37.87.gtf.gz'
 )
+pathProjectCommonFilesGenes = path(pathProjectCommonFiles, "Homo_sapiens.GRCh37.87.gtf.gz")
+if(!file.exists(pathProjectCommonFilesGenes)) {
+  stop("Gene coordinates file could not be downloaded.")
+} else {
+  message("Downloaded gene coordinates file.")
+}
 ## Cell-cycle dataset
 download.file(
   'https://raw.githubusercontent.com/jmonlong/scCNAutils/master/docs/cell-cycle-genes-tirosh2016.tsv',
   'cc_genes.tsv'
 )
+pathProjectCommonFilesCCGenes = path(pathProjectCommonFiles, "cc_genes.tsv")
+if(!file.exists(pathProjectCommonFilesCCGenes)) {
+  stop("Cell-cycle genes file could not be downloaded.")
+} else {
+  message("Downloaded cell-cycle genes file.")
+}
 
 gene.df = read.table('Homo_sapiens.GRCh37.87.gtf.gz',
                      as.is = TRUE,
@@ -32,3 +44,4 @@ write.table(
   row.names = FALSE,
   sep = '\t'
 )
+message("Manipulated gene coordinates file successfully.")
