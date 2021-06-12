@@ -9,8 +9,8 @@ pathProjectReproduceType2 = path(pathProjectReproduce, prefixType2)
 setwd(pathProjectReproduceType2)
 pathProjectCommonFileGenes = path(pathProjectCommonFiles, "genes.tsv")
 pathProjectCommonFileCCGenes = path(pathProjectCommonFiles, "cc_genes.tsv")
-pathProjectReproduceSample1 = path(pathProjectReproduce, "GSM3828672_Smartseq2_GBM_IDHwt_processed_TPM.tsv.gz")
-pathProjectReproduceSample2 = path(pathProjectReproduce, "GSM3828673_10X_GBM_IDHwt_processed_TPM.tsv.gz")
+pathProjectReproduceSample1 = path(pathProjectReproduceType2, "GSM3828672_Smartseq2_GBM_IDHwt_processed_TPM.tsv.gz")
+pathProjectReproduceSample2 = path(pathProjectReproduceType2, "GSM3828673_10X_GBM_IDHwt_processed_TPM.tsv.gz")
 
 sample1.data.df = read.table(
   pathProjectReproduceSample1,
